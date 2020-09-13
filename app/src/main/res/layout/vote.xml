@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:orientation="vertical">
 
     <Space
         android:layout_width="match_parent"
@@ -12,8 +12,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="请投票选出卧底"/>
+        android:text="请投票选出卧底"
+        android:textAlignment="center" />
 
     <Space
         android:layout_width="match_parent"
@@ -27,145 +27,155 @@
             android:id="@+id/btnPlayer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:padding="@dimen/btn_Player_padding"
+            android:text="玩家1"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayer4"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/btnPlayer2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btnPlayer4"
-            android:text="玩家1"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnPlayer2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家2"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayer5"
             app:layout_constraintLeft_toRightOf="@id/btnPlayer1"
             app:layout_constraintRight_toLeftOf="@id/btnPlayer3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btnPlayer5"
 
-            android:text="玩家2"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnPlayer3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家3"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayer4"
             app:layout_constraintLeft_toRightOf="@id/btnPlayer2"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btnPlayer4"
 
-            android:text="玩家3"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnPlayer4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家4"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayer7"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/btnPlayer5"
-            app:layout_constraintTop_toBottomOf="@id/btnPlayer1"
-            app:layout_constraintBottom_toTopOf="@id/btnPlayer7"
 
 
-            android:text="玩家4"/>
+            app:layout_constraintTop_toBottomOf="@id/btnPlayer1" />
 
         <Button
             android:id="@+id/btnPlayer5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家5"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayer8"
             app:layout_constraintLeft_toRightOf="@id/btnPlayer4"
             app:layout_constraintRight_toLeftOf="@id/btnPlayer6"
-            app:layout_constraintTop_toBottomOf="@id/btnPlayer2"
-            app:layout_constraintBottom_toTopOf="@id/btnPlayer8"
 
-            android:text="玩家5"/>
+            app:layout_constraintTop_toBottomOf="@id/btnPlayer2" />
 
         <Button
             android:id="@+id/btnPlayer6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
             android:text="玩家6"
 
+            app:layout_constraintBottom_toTopOf="@id/btnPlayer9"
             app:layout_constraintLeft_toRightOf="@id/btnPlayer5"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnPlayer3"
-            app:layout_constraintBottom_toTopOf="@id/btnPlayer9"
-            />
+            app:layout_constraintTop_toBottomOf="@id/btnPlayer3" />
 
         <Button
             android:id="@+id/btnPlayer7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家7"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayer10"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/btnPlayer8"
-            app:layout_constraintTop_toBottomOf="@id/btnPlayer4"
-            app:layout_constraintBottom_toTopOf="@id/btnPlayer10"
 
-            android:text="玩家7"/>
+            app:layout_constraintTop_toBottomOf="@id/btnPlayer4" />
 
         <Button
             android:id="@+id/btnPlayer8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家8"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayer11"
             app:layout_constraintLeft_toRightOf="@id/btnPlayer7"
             app:layout_constraintRight_toLeftOf="@id/btnPlayer9"
-            app:layout_constraintTop_toBottomOf="@id/btnPlayer5"
-            app:layout_constraintBottom_toTopOf="@id/btnPlayer11"
 
-            android:text="玩家8"/>
+            app:layout_constraintTop_toBottomOf="@id/btnPlayer5" />
 
         <Button
             android:id="@+id/btnPlayer9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家9"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayer12"
             app:layout_constraintLeft_toRightOf="@id/btnPlayer8"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnPlayer6"
-            app:layout_constraintBottom_toTopOf="@id/btnPlayer12"
 
-            android:text="玩家9"/>
+            app:layout_constraintTop_toBottomOf="@id/btnPlayer6" />
 
         <Button
             android:id="@+id/btnPlayer10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家10"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/btnPlayer11"
-            app:layout_constraintTop_toBottomOf="@id/btnPlayer7"
-            app:layout_constraintBottom_toBottomOf="parent"
 
-            android:text="玩家10"/>
+            app:layout_constraintTop_toBottomOf="@id/btnPlayer7" />
 
         <Button
             android:id="@+id/btnPlayer11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家11"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/btnPlayer10"
             app:layout_constraintRight_toLeftOf="@id/btnPlayer12"
-            app:layout_constraintTop_toBottomOf="@id/btnPlayer8"
-            app:layout_constraintBottom_toBottomOf="parent"
 
-            android:text="玩家11"/>
+            app:layout_constraintTop_toBottomOf="@id/btnPlayer8" />
 
         <Button
             android:id="@+id/btnPlayer12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/btn_Player_padding"
 
+            android:text="玩家12"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/btnPlayer11"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnPlayer9"
-            app:layout_constraintBottom_toBottomOf="parent"
 
-            android:text="玩家12"/>
+            app:layout_constraintTop_toBottomOf="@id/btnPlayer9" />
 
     </android.support.constraint.ConstraintLayout>
 
@@ -177,26 +187,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        >
+        android:layout_marginRight="25dp">
 
 
         <android.support.v7.widget.SwitchCompat
             android:id="@+id/swtForget"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="忘了是啥 "
-            android:checked="false"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            />
+            android:checked="false"
+            android:text="忘了是啥 " />
 
         <TextView
             android:id="@+id/txtHint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="双击选择要投出去的玩家"/>
+            android:text="双击选择要投出去的玩家"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
@@ -207,9 +215,9 @@
         android:layout_height="wrap_content"
 
         android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"
         android:layout_marginTop="50dp"
+        android:layout_marginRight="80dp"
 
-        android:text="结束游戏"/>
+        android:text="结束游戏" />
 
 </LinearLayout>
